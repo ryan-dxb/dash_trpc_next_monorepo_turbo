@@ -7,7 +7,7 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({}) => {
   return (
     <div className="">
-      <h1>Home</h1>
+      <h1 className="text-red-500">Home</h1>
     </div>
   );
 };
