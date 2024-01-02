@@ -6,9 +6,10 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@repo/ui/*": ["src/*"]
+      "@repo/ui/*": ["src/*"],
+      "@/": ["src/*"]
     },
     "module": "esnext",
     "resolveJsonModule": true

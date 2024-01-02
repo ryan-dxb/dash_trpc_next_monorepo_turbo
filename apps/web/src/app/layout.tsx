@@ -1,5 +1,7 @@
 import "@repo/ui/src/styles/globals.css";
 import type { Metadata } from "next";
+import DashboardLayout from "../components/layout/DashboardLayout";
+import { ThemeProvider } from "@repo/ui";
 
 export const metadata: Metadata = {
   title: "Create Turborepo",
@@ -13,7 +15,15 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className="">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          <DashboardLayout>{children}</DashboardLayout>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
