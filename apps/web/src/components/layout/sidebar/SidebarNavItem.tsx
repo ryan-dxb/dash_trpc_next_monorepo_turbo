@@ -7,8 +7,8 @@ interface SidebarnavItemProps {
   // Add your page props here
   route: {
     label: string;
-    href: string;
-    active: boolean;
+    href?: string;
+    active?: boolean;
     subRoutes: {
       label: string;
       href: string;

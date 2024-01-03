@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, Button, Input, Separator } from "@repo/ui";
-import { Search, Mail, Bell, Settings, ChevronDown } from "lucide-react";
+import { Search, Mail, Bell, Settings } from "lucide-react";
 import { FC } from "react";
 
 interface HeaderProps {
@@ -9,7 +9,7 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = ({}) => {
   return (
     <div className="flex-shrink-0 w-full border-b-[0.5px] shadow-sm">
-      <div className="flex items-center justify-between h-16 px-4">
+      <div className="flex items-center justify-between h-16 px-6">
         <div className="flex h-10 border w-80">
           <Input
             placeholder="Search"
@@ -38,17 +38,10 @@ const Header: FC<HeaderProps> = ({}) => {
               <AvatarFallback>AD</AvatarFallback>
             </Avatar>
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <span className="text-sm font-semibold">Adeola Adeyemo</span>
-              <span className="text-xs ">Admin</span>
+              <span className="text-xs text-muted-foreground">Admin</span>
             </div>
-
-            <Button
-              variant="ghost"
-              className="w-10 h-10 p-0 rounded-full hover:bg-transparent "
-            >
-              <ChevronDown className="w-4 h-4" />
-            </Button>
           </div>
         </div>
       </div>
