@@ -8,8 +8,10 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({}) => {
   return (
     <div className="">
+
       <Button>Click me</Button>
       <h1>Home</h1>
+
     </div>
   );
 };
