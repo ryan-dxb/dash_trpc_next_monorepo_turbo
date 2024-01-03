@@ -1,3 +1,4 @@
+import { Button } from "@repo/ui";
 import { NextPage } from "next";
 
 interface HomeProps {
@@ -7,7 +8,10 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({}) => {
   return (
     <div className="">
-      <h1 className="text-red-500">Home</h1>
+
+      <Button>Click me</Button>
+      <h1>Home</h1>
+
     </div>
   );
 };
